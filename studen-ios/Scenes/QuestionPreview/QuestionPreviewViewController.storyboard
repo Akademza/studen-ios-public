@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question Preview View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="QuestionPreviewViewController" id="Y6W-OH-hqX" customClass="QuestionPreviewViewController" customModule="studen_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerBackground" translatesAutoresizingMaskIntoConstraints="NO" id="D13-yi-JjB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="6e2-bZ-wYa"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBG-SC-USc">
+                                <rect key="frame" x="15" y="44" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissScene" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6nr-xy-v2I"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-GA-Ni1" customClass="TransparentTableView" customModule="studen_ios" customModuleProvider="target">
+                                <rect key="frame" x="15" y="0.0" width="384" height="862"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D13-yi-JjB" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="0vF-Hr-Ipz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ird-GA-Ni1" secondAttribute="trailing" constant="15" id="HXX-X8-mYH"/>
+                            <constraint firstItem="Ird-GA-Ni1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="M4u-sj-mU7"/>
+                            <constraint firstItem="D13-yi-JjB" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Pmr-48-vSw"/>
+                            <constraint firstItem="Ird-GA-Ni1" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="RW6-NT-mnG"/>
+                            <constraint firstItem="D13-yi-JjB" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="WrA-n5-vQD"/>
+                            <constraint firstItem="Ird-GA-Ni1" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="kIE-iS-ts8"/>
+                            <constraint firstItem="cBG-SC-USc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qqf-eV-4Z1"/>
+                            <constraint firstItem="cBG-SC-USc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="uPs-wZ-ioJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ird-GA-Ni1" id="y59-km-seE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="headerBackground" width="375" height="156"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Load Scene View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoadSceneViewController" id="Y6W-OH-hqX" customClass="LoadSceneViewController" customModule="studen_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sxt-J1-u3J">
+                                <rect key="frame" x="126" y="338.5" width="162" height="219"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="uoC-td-eiM">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="162" id="O4S-Hl-qIB"/>
+                                            <constraint firstAttribute="width" constant="162" id="apG-9e-2TB"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait for auth your session" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lx-T8-v1o">
+                                        <rect key="frame" x="0.0" y="182" width="197" height="20.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tjW-Wh-6yC">
+                                        <rect key="frame" x="62.5" y="182" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="9lx-T8-v1o"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyg-Ee-i8U">
+                                <rect key="frame" x="30" y="772" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.54117647059999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="WfM-kG-bYC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Try again">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tryAuthAgain" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mOs-BJ-VBe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sxt-J1-u3J" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6dI-ht-0oE"/>
+                            <constraint firstItem="iyg-Ee-i8U" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Qc1-Jk-D4M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="iyg-Ee-i8U" secondAttribute="bottom" constant="40" id="aDT-eI-Nq5"/>
+                            <constraint firstItem="iyg-Ee-i8U" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dAk-zD-2sU"/>
+                            <constraint firstItem="sxt-J1-u3J" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mRj-L4-Kyz"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="iyg-Ee-i8U" secondAttribute="trailing" constant="30" id="qBW-IE-21I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="tjW-Wh-6yC" id="FiZ-F1-JZW"/>
+                        <outlet property="reloadButton" destination="iyg-Ee-i8U" id="9aE-Uo-969"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

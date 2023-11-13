@@ -1,0 +1,271 @@
+PODS:
+  - AdColony (4.8.0)
+  - Ads-Global (3.7.0.7):
+    - Ads-Global/BUAdSDK (= 3.7.0.7)
+  - Ads-Global/BUAdSDK (3.7.0.7):
+    - Ads-Global/BUFoundation
+    - Ads-Global/International
+  - Ads-Global/BUFoundation (3.7.0.7)
+  - Ads-Global/International (3.7.0.7)
+  - AmazonAd (3.1.0)
+  - AmazonPublisherServicesSDK (3.3.0)
+  - APDAdColonyAdapter (2.11.1.3):
+    - AdColony (= 4.8.0)
+    - Appodeal (= 2.11.1)
+    - BDMAdColonyAdapter (~> 1.9.0.1)
+  - APDAmazonAdsAdapter (2.11.1.2):
+    - AmazonAd (= 3.1.0)
+    - Appodeal (= 2.11.1)
+    - BDMAmazonAdapter (~> 1.9.0)
+  - APDAppLovinAdapter (2.11.1.3):
+    - AppLovinSDK (~> 11.3.0)
+    - Appodeal (= 2.11.1)
+  - APDBidMachineAdapter (2.11.1.3):
+    - Appodeal (= 2.11.1)
+    - BDMCriteoAdapter (~> 1.9.0)
+    - BDMIABAdapter (~> 1.9.0)
+    - BDMPangleAdapter (~> 1.9.0)
+    - BidMachine (= 1.9.0.2)
+  - APDIronSourceAdapter (2.11.1.3):
+    - Appodeal (= 2.11.1)
+    - IronSourceSDK (= 7.2.1.0)
+  - APDMyTargetAdapter (2.11.1.2):
+    - Appodeal (= 2.11.1)
+    - BDMMyTargetAdapter (~> 1.9.0)
+    - myTargetSDK (= 5.15.0)
+  - APDOguryAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
+    - OguryAds (~> 2.3.4)
+  - APDUnityAdapter (2.11.1.2):
+    - Appodeal (= 2.11.1)
+    - UnityAds (= 4.0.1)
+  - APDVungleAdapter (2.11.1.2):
+    - Appodeal (= 2.11.1)
+    - BDMVungleAdapter (~> 1.9.0)
+    - VungleSDK-iOS (= 6.10.6)
+  - APDYandexAdapter (2.11.1.1):
+    - Appodeal (= 2.11.1)
+    - YandexMobileAds (= 4.4.2)
+  - AppLovinSDK (11.3.1)
+  - Appodeal (2.11.1):
+    - Protobuf
+    - StackAnalytics (~> 1.2.0)
+    - StackIAB (~> 1.5.0)
+    - StackModules (~> 1.1.6)
+  - BDMAdColonyAdapter (1.9.0.1):
+    - AdColony (= 4.8.0)
+    - BidMachine (~> 1.9.0.0)
+  - BDMAmazonAdapter (1.9.0.0):
+    - AmazonPublisherServicesSDK (= 3.3.0)
+    - BidMachine (~> 1.9.0.0)
+  - BDMCriteoAdapter (1.9.0.0):
+    - BidMachine (~> 1.9.0.0)
+    - CriteoPublisherSdk (= 4.3.3)
+  - BDMIABAdapter (1.9.0.0):
+    - BDMIABAdapter/IAB (= 1.9.0.0)
+  - BDMIABAdapter/IAB (1.9.0.0):
+    - BDMIABAdapter/MRAID
+    - BDMIABAdapter/NAST
+    - BDMIABAdapter/VAST
+  - BDMIABAdapter/MRAID (1.9.0.0):
+    - BidMachine (~> 1.9.0.0)
+    - StackIAB/StackMRAIDKit (~> 1.5.0)
+  - BDMIABAdapter/NAST (1.9.0.0):
+    - BidMachine (~> 1.9.0.0)
+    - StackIAB/StackNASTKit (~> 1.5.0)
+    - StackIAB/StackRichMedia (~> 1.5.0)
+  - BDMIABAdapter/VAST (1.9.0.0):
+    - BidMachine (~> 1.9.0.0)
+    - StackIAB/StackVASTKit (~> 1.5.0)
+  - BDMMyTargetAdapter (1.9.0.1):
+    - BidMachine (~> 1.9.0.0)
+    - myTargetSDK (= 5.15.0)
+  - BDMPangleAdapter (1.9.0.0):
+    - Ads-Global (= 3.7.0.7)
+    - BidMachine (~> 1.9.0.0)
+  - BDMVungleAdapter (1.9.0.1):
+    - BidMachine (~> 1.9.0.0)
+    - VungleSDK-iOS (= 6.10.6)
+  - BidMachine (1.9.0.2):
+    - BidMachine/Core (= 1.9.0.2)
+  - BidMachine/Core (1.9.0.2):
+    - Protobuf (~> 3.9)
+    - StackModules (~> 1.1.0)
+  - CriteoPublisherSdk (4.3.3):
+    - CriteoPublisherSdk/Sdk (= 4.3.3)
+  - CriteoPublisherSdk/Sdk (4.3.3)
+  - IronSourceSDK (7.2.1.0)
+  - myTargetSDK (5.15.0):
+    - myTrackerSDK (~> 3.0.3)
+  - myTrackerSDK (3.0.6)
+  - OguryAds (2.3.5):
+    - OguryAds/OMID (= 2.3.5)
+  - OguryAds/OMID (2.3.5)
+  - Protobuf (3.19.4)
+  - StackAnalytics (1.2.1):
+    - StackAnalytics/Full (= 1.2.1)
+    - StackModules (~> 1.1.0)
+  - StackAnalytics/Base (1.2.1):
+    - StackModules (~> 1.1.0)
+  - StackAnalytics/Crashes (1.2.1):
+    - StackModules (~> 1.1.0)
+  - StackAnalytics/Full (1.2.1):
+    - StackAnalytics/Base
+    - StackAnalytics/Crashes
+    - StackModules (~> 1.1.0)
+  - StackIAB (1.5.2):
+    - StackIAB/StackIABAssets (= 1.5.2)
+    - StackIAB/StackMRAIDKit (= 1.5.2)
+    - StackIAB/StackNASTKit (= 1.5.2)
+    - StackIAB/StackOpenMeasure (= 1.5.2)
+    - StackIAB/StackRichMedia (= 1.5.2)
+    - StackIAB/StackVASTAssets (= 1.5.2)
+    - StackIAB/StackVASTKit (= 1.5.2)
+    - StackIAB/StackVideoPlayer (= 1.5.2)
+    - StackIAB/StackXML (= 1.5.2)
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackIABAssets (1.5.2):
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackMRAIDKit (1.5.2):
+    - StackIAB/StackIABAssets
+    - StackIAB/StackOpenMeasure
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackNASTKit (1.5.2):
+    - StackIAB/StackVASTKit
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackOpenMeasure (1.5.2):
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackRichMedia (1.5.2):
+    - StackIAB/StackIABAssets
+    - StackIAB/StackVASTAssets
+    - StackIAB/StackVideoPlayer
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackVASTAssets (1.5.2):
+    - StackIAB/StackIABAssets
+    - StackIAB/StackXML
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackVASTKit (1.5.2):
+    - StackIAB/StackMRAIDKit
+    - StackIAB/StackVASTAssets
+    - StackIAB/StackVideoPlayer
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackVideoPlayer (1.5.2):
+    - StackModules (~> 1.1.7)
+  - StackIAB/StackXML (1.5.2):
+    - StackModules (~> 1.1.7)
+  - StackModules (1.1.12):
+    - StackModules/StackProductPresentation (= 1.1.12)
+  - StackModules/StackFoundation (1.1.12)
+  - StackModules/StackProductPresentation (1.1.12):
+    - StackModules/StackUIKit
+  - StackModules/StackUIKit (1.1.12):
+    - StackModules/StackFoundation
+  - UnityAds (4.0.1)
+  - VungleSDK-iOS (6.10.6)
+  - YandexMobileAds (4.4.2):
+    - YandexMobileAds/Static (= 4.4.2)
+  - YandexMobileAds/Static (4.4.2):
+    - YandexMobileMetrica (< 4.0.0, >= 3.14.1)
+  - YandexMobileMetrica (3.17.0):
+    - YandexMobileMetrica/Static (= 3.17.0)
+  - YandexMobileMetrica/Static (3.17.0):
+    - YandexMobileMetrica/Static/Core (= 3.17.0)
+    - YandexMobileMetrica/Static/Crashes (= 3.17.0)
+  - YandexMobileMetrica/Static/Core (3.17.0)
+  - YandexMobileMetrica/Static/Crashes (3.17.0):
+    - YandexMobileMetrica/Static/Core
+
+DEPENDENCIES:
+  - APDAdColonyAdapter (= 2.11.1.3)
+  - APDAmazonAdsAdapter (= 2.11.1.2)
+  - APDAppLovinAdapter (= 2.11.1.3)
+  - APDBidMachineAdapter (= 2.11.1.3)
+  - APDIronSourceAdapter (= 2.11.1.3)
+  - APDMyTargetAdapter (= 2.11.1.2)
+  - APDOguryAdapter (= 2.11.1.1)
+  - APDUnityAdapter (= 2.11.1.2)
+  - APDVungleAdapter (= 2.11.1.2)
+  - APDYandexAdapter (= 2.11.1.1)
+
+SPEC REPOS:
+  trunk:
+    - AdColony
+    - Ads-Global
+    - AmazonAd
+    - AmazonPublisherServicesSDK
+    - APDAdColonyAdapter
+    - APDAmazonAdsAdapter
+    - APDAppLovinAdapter
+    - APDBidMachineAdapter
+    - APDIronSourceAdapter
+    - APDMyTargetAdapter
+    - APDOguryAdapter
+    - APDUnityAdapter
+    - APDVungleAdapter
+    - APDYandexAdapter
+    - AppLovinSDK
+    - Appodeal
+    - BDMAdColonyAdapter
+    - BDMAmazonAdapter
+    - BDMCriteoAdapter
+    - BDMIABAdapter
+    - BDMMyTargetAdapter
+    - BDMPangleAdapter
+    - BDMVungleAdapter
+    - BidMachine
+    - CriteoPublisherSdk
+    - IronSourceSDK
+    - myTargetSDK
+    - myTrackerSDK
+    - OguryAds
+    - Protobuf
+    - StackAnalytics
+    - StackIAB
+    - StackModules
+    - UnityAds
+    - VungleSDK-iOS
+    - YandexMobileAds
+    - YandexMobileMetrica
+
+SPEC CHECKSUMS:
+  AdColony: eba15b485d1e63d36601d5da4916af73d343b897
+  Ads-Global: 181a0b751db8694b6a50798977f52f0ae803673a
+  AmazonAd: 9adf416ea36ca2325ce2040c0cf124f071089904
+  AmazonPublisherServicesSDK: 12ec8a797b49796f2714d5f99235370e24bf93e6
+  APDAdColonyAdapter: d8288df832d2062d10150c78dd519f8bd4350a12
+  APDAmazonAdsAdapter: 47c381a268b22cb5778aafe9abaec040b46c015f
+  APDAppLovinAdapter: 2bee4d30281969e9ba01eb542773d2d4c8c097a2
+  APDBidMachineAdapter: da1fc1deaa091b5c90cb9433a073c164b2587d15
+  APDIronSourceAdapter: b405bb494b9305cbb20a97d0022d7ac9d1fffbea
+  APDMyTargetAdapter: b72eb49b13fbba8a1cc4f2111af6162cd7a7d707
+  APDOguryAdapter: e8bf791426764d9f3b1ae6effa31c8c60b5148d7
+  APDUnityAdapter: 4803967df195f2a2dcfa51c92baf6b6d4c9d9d0a
+  APDVungleAdapter: a465ccf66883f3b84267f86698995ccb506a08e8
+  APDYandexAdapter: a06d24bcfe1ee67816cc2374709bc1d33e19e151
+  AppLovinSDK: 7965663198de61735b77106702ca8e320299e53c
+  Appodeal: 1188bd8b3a34557761ef79baa3a508b4b7961cf0
+  BDMAdColonyAdapter: 052fe3542da04c2cf439ecf47a329a305f556164
+  BDMAmazonAdapter: d63bbc92349bbfaa32714d245a93d2359a6da062
+  BDMCriteoAdapter: be9e5043107e4afd638a6d34cb2df71c146f1c4f
+  BDMIABAdapter: fa73edc43c1578458110a8801ad9de8d53bbddf0
+  BDMMyTargetAdapter: 41baa743309b094af5c964e177c934ce6d9c0891
+  BDMPangleAdapter: 6f6edce5e66a2d42c0981e6a6851dbadbac6480d
+  BDMVungleAdapter: ecebcc0ed6962b3e6369318c1a777757909f0687
+  BidMachine: 1c3d2bd3b4a4383025a8072fda7707dcbeaaf557
+  CriteoPublisherSdk: e0c7343d21474ac9a5381c002f2b3f40438f86ba
+  IronSourceSDK: 49c6abb070214a60ee9f201a30336eb733b4adf1
+  myTargetSDK: e821d1cf642c2a0785a0dddb1a10ba46a2737605
+  myTrackerSDK: 4fc38a0c56573d58761f3e85dbad483077fd0d2d
+  OguryAds: 8dccce073aea7e11ddb83f1122e8ee65bf33f3c3
+  Protobuf: 235750e4696ff59fb07d949a9dbbc92b3c0700fe
+  StackAnalytics: 012be5ae16c8f5005eb9a2e1557b37eaaf96f71d
+  StackIAB: 49e1b3215c061f2bbe39198af34edd502bdee1ae
+  StackModules: ae9aafe7d76f2c99ac87bdcfe27451076fb5e8f8
+  UnityAds: 6d2fecf09f314049993b9d1c0fcd2efc43dfa60e
+  VungleSDK-iOS: c43c627392eaf4ceda029f069b8e458cc6fe112a
+  YandexMobileAds: 1306a03792ac2a6576e7e52f49f86a9e7e65c49b
+  YandexMobileMetrica: 9e713c16bb6aca0ba63b84c8d7b8b86d32f4ecc4
+
+PODFILE CHECKSUM: fca4c84dc82341afbb3882f74dc827329fc40b82
+
+COCOAPODS: 1.11.3
