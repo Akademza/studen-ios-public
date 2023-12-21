@@ -1,0 +1,6 @@
+framework module StackModules {
+  umbrella header "StackModules-umbrella.h"
+
+  export *
+  module * { export * }
+}

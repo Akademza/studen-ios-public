@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Appodeal/Appodeal-xcframeworks.sh
+${PODS_ROOT}/Appodeal/Appodeal-2.11.1/Appodeal.xcframework
+${PODS_ROOT}/Appodeal/Appodeal-2.11.1/AppodealMediationCoreObjC.xcframework
+${PODS_ROOT}/Appodeal/Appodeal-2.11.1/StackAPI.xcframework

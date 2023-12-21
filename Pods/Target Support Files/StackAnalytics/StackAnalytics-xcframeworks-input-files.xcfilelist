@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/StackAnalytics/StackAnalytics-xcframeworks.sh
+${PODS_ROOT}/StackAnalytics/StackAnalytics.xcframework
+${PODS_ROOT}/StackAnalytics/StackCrashReporter.xcframework

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B67AA2FC-F2E7-4A87-B3DA-5FCC3E955A20"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7FA510D3-802C-45B7-9230-416106772289"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios-clip/Scenes/LoadScene/LoadSceneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7FA510D3-802C-45B7-9230-416106772289 - ae37a328ea8c6d1f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (studen_ios_clip.LoadSceneViewModel.LoadState) -&gt; () in studen_ios_clip.LoadSceneViewController.bind() -&gt; ()"
+                  moduleName = "studen-ios-clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Work/Projects/2023/Pifagor/ios/studen-ios-clip/Scenes/LoadScene/LoadSceneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "124"
+                  endingLineNumber = "124"
+                  offsetFromSymbolStart = "939">
+               </Location>
+               <Location
+                  uuid = "7FA510D3-802C-45B7-9230-416106772289 - a66ab6d204d3eb0f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 @Swift.MainActor () -&gt; () in closure #1 (studen_ios_clip.LoadSceneViewModel.LoadState) -&gt; () in studen_ios_clip.LoadSceneViewController.bind() -&gt; ()"
+                  moduleName = "studen-ios-clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Work/Projects/2023/Pifagor/ios/studen-ios-clip/Scenes/LoadScene/LoadSceneViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "69">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "514C82BD-0350-4E19-B592-7B27F9222AD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios-clip/Scenes/LoadScene/LoadSceneViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "checkAuth(url:isModal:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B6BFDA1-EE24-4AE8-B35F-EB4AFF71CCA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios-clip/Scenes/LoadScene/LoadSceneViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "checkAuth(url:isModal:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B6BFDA1-EE24-4AE8-B35F-EB4AFF71CCA7 - 2f4aace621efcede"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "studen_ios_clip.LoadSceneViewModel.checkAuth(url: Swift.String, isModal: Swift.Bool) -&gt; ()"
+                  moduleName = "studen-ios-clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Work/Projects/2023/Pifagor/ios/studen-ios-clip/Scenes/LoadScene/LoadSceneViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  uuid = "2B6BFDA1-EE24-4AE8-B35F-EB4AFF71CCA7 - 6e29ddb816de64fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;(token: Swift.String, user: studen_ios_clip.User), Swift.Error&gt;) -&gt; () in studen_ios_clip.LoadSceneViewModel.checkAuth(url: Swift.String, isModal: Swift.Bool) -&gt; ()"
+                  moduleName = "studen-ios-clip"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Work/Projects/2023/Pifagor/ios/studen-ios-clip/Scenes/LoadScene/LoadSceneViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5A81096B-5E40-48CB-BB00-F9CDA6A249AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios-clip/Scenes/LoadScene/LoadSceneViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init(url:isModal:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "43921161-0734-43B5-9E1A-AEC356A45774"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios/Services/Repositories/MainRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "auth(uuid:playerID:url:isModal:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F2617024-5046-470E-BE17-1E49037608D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios/Services/Repositories/MainRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "211"
+            endingLineNumber = "211"
+            landmarkName = "auth(uuid:playerID:url:isModal:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BD2A391-26EC-41FD-B465-2332760B2107"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios/Services/Repositories/MainRepo.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "auth(uuid:playerID:url:isModal:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BD2A391-26EC-41FD-B465-2332760B2107 - e953a088aa224675"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "studen_ios.MainRepo.auth(uuid: Swift.String, playerID: Swift.String, url: Swift.String, isModal: Swift.Bool, completion: (Swift.Result&lt;(token: Swift.String, user: studen_ios.User), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "studen-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Work/Projects/2023/Pifagor/ios/studen-ios/Services/Repositories/MainRepo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "1829">
+               </Location>
+               <Location
+                  uuid = "3BD2A391-26EC-41FD-B465-2332760B2107 - bf586c9d84e8ce00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;, Swift.Optional&lt;Swift.Int&gt;, Swift.Dictionary&lt;Swift.AnyHashable, Any&gt;) -&gt; () in studen_ios.MainRepo.auth(uuid: Swift.String, playerID: Swift.String, url: Swift.String, isModal: Swift.Bool, completion: (Swift.Result&lt;(token: Swift.String, user: studen_ios.User), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "studen-ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Work/Projects/2023/Pifagor/ios/studen-ios/Services/Repositories/MainRepo.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "211"
+                  endingLineNumber = "211"
+                  offsetFromSymbolStart = "437">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2096F505-CD71-4958-8112-66D107F95185"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "studen-ios-clip/App/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

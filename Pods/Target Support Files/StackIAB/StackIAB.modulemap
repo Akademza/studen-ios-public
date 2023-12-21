@@ -1,0 +1,6 @@
+framework module StackIAB {
+  umbrella header "StackIAB-umbrella.h"
+
+  export *
+  module * { export * }
+}

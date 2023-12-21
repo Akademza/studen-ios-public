@@ -1,0 +1,3 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackFoundation/StackFoundation.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackProductPresentation/StackProductPresentation.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/StackModules/StackUIKit/StackUIKit.framework
