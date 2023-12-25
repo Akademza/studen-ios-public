@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2E926205B60FD9256E0AB1C3 /* Pods_studen_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD8DA15CF6E4A06FD86533B /* Pods_studen_ios.framework */; };
+		3067AE282B3736A700A7245D /* CustomWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067AE272B3736A700A7245D /* CustomWebViewController.swift */; };
+		3067AE2A2B37372F00A7245D /* CustomWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067AE292B37372F00A7245D /* CustomWebViewModel.swift */; };
 		C7A3C74B7305AA8FE64724D0 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB44CB90051BCF0A2E24BD89 /* Pods_OneSignalNotificationServiceExtension.framework */; };
 		E12091DF27E9D8AE0076247A /* LoadSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12091DE27E9D8AE0076247A /* LoadSceneViewController.swift */; };
 		E12091E127E9D9230076247A /* LoadSceneViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12091E027E9D9230076247A /* LoadSceneViewController.storyboard */; };
@@ -53,8 +55,6 @@
 		E137AB2027E090F300A80173 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137AB1F27E090F300A80173 /* ContactUsVC.swift */; };
 		E137AB2227E0910200A80173 /* ContactUsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E137AB2127E0910200A80173 /* ContactUsVC.storyboard */; };
 		E137AB2427E0949900A80173 /* TransparentTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137AB2327E0949900A80173 /* TransparentTableView.swift */; };
-		E137AB2627E0991400A80173 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137AB2527E0991400A80173 /* PaymentViewController.swift */; };
-		E137AB2827E0993200A80173 /* PaymentViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E137AB2727E0993200A80173 /* PaymentViewController.storyboard */; };
 		E137AB2A27E0AA7900A80173 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137AB2927E0AA7900A80173 /* WebviewViewController.swift */; };
 		E137AB2C27E0AA8300A80173 /* WebviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E137AB2B27E0AA8300A80173 /* WebviewViewModel.swift */; };
 		E18DCD0327DF559400CF429B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18DCD0227DF559400CF429B /* AppDelegate.swift */; };
@@ -118,6 +118,8 @@
 		2DD8DA15CF6E4A06FD86533B /* Pods_studen_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_studen_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		301D0E932B304E01001A051B /* studen-ios-clipRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "studen-ios-clipRelease.entitlements"; sourceTree = "<group>"; };
 		301D0E942B304E01001A051B /* studen_ios_clip.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = studen_ios_clip.entitlements; sourceTree = "<group>"; };
+		3067AE272B3736A700A7245D /* CustomWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebViewController.swift; sourceTree = "<group>"; };
+		3067AE292B37372F00A7245D /* CustomWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebViewModel.swift; sourceTree = "<group>"; };
 		5B20F30CE3275CA76E7346A8 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		8BD06F2EC66220541DDFB8B4 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
 		CB44CB90051BCF0A2E24BD89 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,8 +167,6 @@
 		E137AB1F27E090F300A80173 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
 		E137AB2127E0910200A80173 /* ContactUsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactUsVC.storyboard; sourceTree = "<group>"; };
 		E137AB2327E0949900A80173 /* TransparentTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentTableView.swift; sourceTree = "<group>"; };
-		E137AB2527E0991400A80173 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		E137AB2727E0993200A80173 /* PaymentViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentViewController.storyboard; sourceTree = "<group>"; };
 		E137AB2927E0AA7900A80173 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 		E137AB2B27E0AA8300A80173 /* WebviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewModel.swift; sourceTree = "<group>"; };
 		E17E0C0427F7474E00450F09 /* LoadSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadSceneViewController.swift; sourceTree = "<group>"; };
@@ -290,7 +290,6 @@
 			children = (
 				E19704FE27EC6BDB00D702C1 /* Update */,
 				E12091DD27E9D88A0076247A /* LoadScene */,
-				E137AAC727DF5E4F00A80173 /* Payment */,
 				E137AAC627DF5E3B00A80173 /* Contacts */,
 				E137AAC527DF5E3400A80173 /* QuestionPreview */,
 				E137AAC427DF5E1D00A80173 /* Questions */,
@@ -335,6 +334,8 @@
 			children = (
 				E137AB2927E0AA7900A80173 /* WebviewViewController.swift */,
 				E137AB2B27E0AA8300A80173 /* WebviewViewModel.swift */,
+				3067AE272B3736A700A7245D /* CustomWebViewController.swift */,
+				3067AE292B37372F00A7245D /* CustomWebViewModel.swift */,
 			);
 			path = Webview;
 			sourceTree = "<group>";
@@ -389,15 +390,6 @@
 				E137AB1C27E090E300A80173 /* ContactsViewController.storyboard */,
 			);
 			path = Contacts;
-			sourceTree = "<group>";
-		};
-		E137AAC727DF5E4F00A80173 /* Payment */ = {
-			isa = PBXGroup;
-			children = (
-				E137AB2527E0991400A80173 /* PaymentViewController.swift */,
-				E137AB2727E0993200A80173 /* PaymentViewController.storyboard */,
-			);
-			path = Payment;
 			sourceTree = "<group>";
 		};
 		E137AAC827DF5E8300A80173 /* Components */ = {
@@ -807,7 +799,6 @@
 				E197050027EC6BE700D702C1 /* UpdateViewController.storyboard in Resources */,
 				E137AB1527E0814000A80173 /* HeaderCell.xib in Resources */,
 				E137AAE427DF74F600A80173 /* QuestionsViewController.storyboard in Resources */,
-				E137AB2827E0993200A80173 /* PaymentViewController.storyboard in Resources */,
 				E137AB2227E0910200A80173 /* ContactUsVC.storyboard in Resources */,
 				E137AAED27DF755300A80173 /* QuestionCell.xib in Resources */,
 				E18DCD0F27DF559600CF429B /* LaunchScreen.storyboard in Resources */,
@@ -923,7 +914,6 @@
 				E137AB0F27E0806700A80173 /* QuestionPreviewInteractor.swift in Sources */,
 				E18DCD0327DF559400CF429B /* AppDelegate.swift in Sources */,
 				E19704FD27EC6BD600D702C1 /* UpdateViewController.swift in Sources */,
-				E137AB2627E0991400A80173 /* PaymentViewController.swift in Sources */,
 				E137AB2027E090F300A80173 /* ContactUsVC.swift in Sources */,
 				E1DB8EF227E33318003595D4 /* Purchase.swift in Sources */,
 				E137AACF27DF5F9600A80173 /* Networking.swift in Sources */,
@@ -939,6 +929,7 @@
 				E18DCD0527DF559400CF429B /* SceneDelegate.swift in Sources */,
 				E137AB1427E0814000A80173 /* HeaderCell.swift in Sources */,
 				E1DB8EE427E1D50B003595D4 /* HttpError.swift in Sources */,
+				3067AE282B3736A700A7245D /* CustomWebViewController.swift in Sources */,
 				E137AB0D27E0806700A80173 /* QuestionPreviewViewController.swift in Sources */,
 				E137AB0E27E0806700A80173 /* QuestionPreviewAssembly.swift in Sources */,
 				E137AB0A27E0806700A80173 /* QuestionPreviewRouter.swift in Sources */,
@@ -952,6 +943,7 @@
 				E137AB1B27E090CF00A80173 /* ContactsViewController.swift in Sources */,
 				E137AAE227DF74F600A80173 /* QuestionsWorker.swift in Sources */,
 				E12091E327E9D92D0076247A /* LoadSceneViewModel.swift in Sources */,
+				3067AE2A2B37372F00A7245D /* CustomWebViewModel.swift in Sources */,
 				E137AAFF27DF842A00A80173 /* TwoCornerRoundedMask.swift in Sources */,
 				E137AAE727DF74F600A80173 /* QuestionsAssembly.swift in Sources */,
 				E137AB0827E0806700A80173 /* QuestionPreviewPresenter.swift in Sources */,
@@ -1129,7 +1121,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "studen-ios/studen-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = NSZJL3HNW5;
 				INFOPLIST_FILE = "studen-ios/App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pifagor AI";
@@ -1155,7 +1147,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "studen-ios/studen-iosRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 10;
+				CURRENT_PROJECT_VERSION = 12;
 				DEVELOPMENT_TEAM = NSZJL3HNW5;
 				INFOPLIST_FILE = "studen-ios/App/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pifagor AI";

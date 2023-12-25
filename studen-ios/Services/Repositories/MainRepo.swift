@@ -164,7 +164,9 @@ extension MainRepo: MainRepoType {
                 completion(.failure(error))
                 return
             }
-            
+            if let t = data != nil ? String(data: data!, encoding: .utf8) : nil {
+                print(t)
+            }
             switch statusCode {
             case 200:
                 guard let res = self.decodeJSON(type: QuestionSearch.self, from: data) else {
@@ -186,7 +188,9 @@ extension MainRepo: MainRepoType {
                 completion(.failure(error))
                 return
             }
-            
+            if let t = data != nil ? String(data: data!, encoding: .utf8) : nil {
+                print(t)
+            }
             switch statusCode {
             case 200:
                 guard let res = self.decodeJSON(type: QuestionPreviewModel.self, from: data) else {

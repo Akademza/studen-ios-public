@@ -24,7 +24,7 @@ struct QuestionPreviewModel: Decodable {
     let ads: Bool
     let id: Int
     let nick: String
-    let ava: String
+    let ava: String?
     let text: String
     let answers_count: Int
     let answers_muted: Bool

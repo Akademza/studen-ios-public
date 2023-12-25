@@ -25,7 +25,8 @@ class NetworkService {
         components.host = API.host
         components.scheme = API.scheme
         if params != [:] {
-            components.queryItems = params.map { URLQueryItem(name: $0, value: $1.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)) }
+            components.queryItems = params.map { URLQueryItem(name: $0, value: $1) }
+            //components.queryItems = params.map { URLQueryItem(name: $0, value: $1.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)) }
         }
         components.path = path
         

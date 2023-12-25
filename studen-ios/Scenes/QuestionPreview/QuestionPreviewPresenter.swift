@@ -33,7 +33,7 @@ class QuestionPreviewPresenter: QuestionPreviewPresentationLogic {
         let cells = questionModel.answers.map({ self.answerToViewModel($0, isHidden: questionModel.answers_muted) })
         let header = QuestionPreviewViewModel.QuestionModel.init(authorName: questionModel.nick,
                                                                  questionText: questionModel.text,
-                                                                 authorPhotoPath: questionModel.ava)
+                                                                 authorPhotoPath: questionModel.ava ?? "")
         let viewModel = QuestionPreviewViewModel.init(questionModel: header, answers: cells)
         return viewModel
     }

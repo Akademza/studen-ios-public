@@ -84,7 +84,6 @@ extension QuestionPreviewViewController: UITableViewDelegate, UITableViewDataSou
             else { return UITableViewCell() }
             let viewModel = viewModel.answers[indexPath.row - oneQuestionCell]
             cell.setData(viewModel)
-            cell.delegate = self
             return cell
         }
     }
@@ -95,14 +94,4 @@ extension QuestionPreviewViewController: UITableViewDelegate, UITableViewDataSou
                                         cellIndexWithCorners: 0)
         cell.layer.mask = mask
     }
-}
-
-// MARK: - Answer Cell Delegate
-
-extension QuestionPreviewViewController: AnswerCellDelegate {
-    
-    func navigateToPayment() {
-        router?.navigateToPayment()
-    }
-    
 }

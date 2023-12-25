@@ -13,8 +13,8 @@ extension UIViewController {
         case terms = "https://edu-smartsolutions.com/terms-of-use.html"
         case settings
         case privacy = "https://edu-smartsolutions.com/privacy-policy.html"
-        case app = "itms-apps://apple.com/app/id1608580002"
-        case rateApp = "itms-apps://apple.com/app/id1608580002?action=write-review&mt=8"
+        case app = "itms-apps://apple.com/app/id6474548962"
+        case rateApp = "itms-apps://apple.com/app/id6474548962?action=write-review&mt=8"
     }
     
     func openUrl(_ url: WebviewUrls) {

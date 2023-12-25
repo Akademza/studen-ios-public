@@ -9,23 +9,12 @@
 import UIKit
 
 protocol QuestionPreviewRoutingLogic {
-    func navigateToPayment()
+    
 }
 
 class QuestionPreviewRouter: NSObject, QuestionPreviewRoutingLogic {
     
     
     weak var viewController: QuestionPreviewViewController?
-    
-    // MARK: Routing
-    
-    func navigateToPayment() {
-        let storyboard = UIStoryboard(name: "PaymentViewController", bundle: nil)
-        guard
-            let vc = storyboard.instantiateViewController(identifier: "PaymentViewController") as? PaymentViewController
-        else { return }
-        vc.modalPresentationStyle = .fullScreen
-        viewController?.present(vc, animated: true, completion: nil)
-    }
     
 }

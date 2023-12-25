@@ -24,14 +24,24 @@ class QuestionsViewController: UIViewController {
     @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet private weak var emptyPlaceholder: UIView!
     private let refreshControl = UIRefreshControl()
-    
-    
+    @IBOutlet private weak var buttonNewQuestion: UIButton!
+
+    @IBAction private func onNewQuestion() {
+        let vc = CustomWebViewController()
+        vc.url = "https://webview.pifagor.ai/ai-chat"
+        present(vc, animated: true)
+    }
+
+    @IBOutlet private weak var labelNotFound: UILabel!
+
     // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         activityIndicator.hidesWhenStopped = true
+        
+        buttonNewQuestion.layer.cornerRadius = 22
         
         setupTables()
     }
@@ -81,7 +91,8 @@ extension QuestionsViewController: QuestionsDisplayLogic {
 extension QuestionsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.cells.count + oneHeaderCell
+        labelNotFound.isHidden = viewModel.cells.count > 0
+        return viewModel.cells.count + oneHeaderCell
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

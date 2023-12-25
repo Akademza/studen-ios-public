@@ -16,7 +16,7 @@ class ContactsViewController: UIViewController {
         view.backgroundColor = .lightBlue
     }
     
-    @IBAction private func navigateToContacts() {
+    @IBAction private func navigateToContacts1() {
         let storyboard = UIStoryboard(name: "ContactUsVC", bundle: nil)
         guard
             let vc = storyboard.instantiateViewController(identifier: "ContactUsVC") as? ContactUsVC
@@ -40,7 +40,16 @@ class ContactsViewController: UIViewController {
     }
     
     @IBAction private func navigateToAboutTheApp() {
-        openUrl(.app)
+        let vc = CustomWebViewController()
+        vc.url = "https://webview.pifagor.ai/"
+        present(vc, animated: true)
+        //openUrl(.app)
     }
     
+    @IBAction private func navigateToContacts() {
+        let vc = CustomWebViewController()
+        vc.url = "https://webview.pifagor.ai/contact"
+        present(vc, animated: true)
+        //openUrl(.app)
+    }
 }

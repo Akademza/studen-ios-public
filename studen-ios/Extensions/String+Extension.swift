@@ -5,7 +5,7 @@
 //  Created by Andreas on 17.03.2022.
 //
 
-import Foundation
+import UIKit
 
 extension String {
     
@@ -48,7 +48,11 @@ extension String {
     func toAttributedString() -> NSMutableAttributedString? {
         let htmlData = NSString(string: self).data(using: String.Encoding.unicode.rawValue)
         let options = [NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html]
-        return try? NSMutableAttributedString(data: htmlData ?? Data(), options: options, documentAttributes: nil)
+        //let attributes:[NSAttributedString.Key:NSObject] = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)]
+        let result = try? NSMutableAttributedString(data: htmlData ?? Data(), options: options, documentAttributes: nil)
+        result?.convertFontTo(font: UIFont.systemFont(ofSize: 20))
+        return result
+
     }
     
     func removeAddHash() -> String {
@@ -84,4 +88,21 @@ enum WebviewCommands {
     case update
     case full
     case requestVideoPerms
+}
+
+extension NSMutableAttributedString
+{
+    func convertFontTo(font: UIFont)
+    {
+        var range = NSMakeRange(0, 0)
+
+        while (NSMaxRange(range) < length) {
+            let attributes = attributes(at: NSMaxRange(range), effectiveRange: &range)
+            if let oldFont = attributes[NSAttributedString.Key.font]
+            {
+                let newFont = UIFont(descriptor: font.fontDescriptor.withSymbolicTraits((oldFont as AnyObject).fontDescriptor.symbolicTraits)!, size: font.pointSize)
+                addAttribute(NSAttributedString.Key.font, value: newFont, range: range)
+            }
+        }
+    }
 }

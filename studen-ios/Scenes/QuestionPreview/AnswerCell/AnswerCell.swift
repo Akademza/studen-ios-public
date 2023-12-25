@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol AnswerCellDelegate: AnyObject {
-    func navigateToPayment()
-}
-
 protocol AnswerCellViewModel {
     var authorName: String { get }
     var isHidden: Bool { get }
@@ -21,8 +17,6 @@ protocol AnswerCellViewModel {
 class AnswerCell: UITableViewCell {
     
     static let reuseID: String = "AnswerCell"
-    
-    weak var delegate: AnswerCellDelegate?
     
     @IBOutlet private weak var authorName: UILabel!
     @IBOutlet private weak var blurView: UIView!
@@ -48,12 +42,13 @@ class AnswerCell: UITableViewCell {
         blurView.insertSubview(blurEffect, at: 0)
         authorName.text = viewModel.authorName
         blurView.isHidden = !viewModel.isHidden
-        answerText.text = viewModel.answerText
+        blurView.isHidden = true
+        answerText.attributedText = viewModel.answerText.toAttributedString()
         seperationLine.isHidden = viewModel.isHidden
     }
     
     @IBAction private func showAnswer() {
-        delegate?.navigateToPayment()
+
     }
     
 }
