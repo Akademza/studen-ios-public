@@ -20,9 +20,10 @@ class WebviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        webview?.customUserAgent = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36"
         
         configureWebiew()
-        loadUrl(API.mainWebsite)
+        loadUrl1(API.mainWebsite)
         fetchProducts()
         bindViewModel()
         Appodeal.setRewardedVideoDelegate(self)
@@ -61,7 +62,7 @@ class WebviewViewController: UIViewController {
         view.addSubview(webview)
     }
     
-    private func loadUrl(_ url: String) {
+    private func loadUrl1(_ url: String) {
         guard let url = URL(string: url) else { return }
         let token = UDService.shared.getToken() ?? ""
         let authCookie = HTTPCookie.cookies(withResponseHeaderFields: ["Authorization": "Bearer \(token)"], for: url)
@@ -70,6 +71,18 @@ class WebviewViewController: UIViewController {
         authCookie.forEach {
             webview?.configuration.websiteDataStore.httpCookieStore.setCookie($0, completionHandler: nil)
         }
+        webview?.load(request)
+    }
+    
+    private func loadUrl2(_ url: String) {
+        guard let url = URL(string: url) else { return }
+        //let token = UDService.shared.getToken() ?? ""
+        //let authCookie = HTTPCookie.cookies(withResponseHeaderFields: ["Authorization": "Bearer \(token)"], for: url)
+        var request = URLRequest(url: url)
+        //request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        //authCookie.forEach {
+        //    webview?.configuration.websiteDataStore.httpCookieStore.setCookie($0, completionHandler: nil)
+        //}
         webview?.load(request)
     }
     
@@ -104,7 +117,7 @@ class WebviewViewController: UIViewController {
                 let res = currentUrlString.removeAnyHash()
 
                 let urlWithoutHash = res + "#otvet"
-                self.loadUrl(urlWithoutHash)
+                self.loadUrl2(urlWithoutHash)
             } else if let purchase = result.nonRenewingPurchase {
                 self.viewModel.addPurchase(productID: purchase.productId)
             } else {
@@ -131,7 +144,7 @@ class WebviewViewController: UIViewController {
         let res = currentUrlString1.removeAnyHash()
         
         let urlWithoutHash = res + "#otvet"
-        self.loadUrl(urlWithoutHash)
+        self.loadUrl2(urlWithoutHash)
     }
     
     private func restore() {
@@ -153,7 +166,7 @@ class WebviewViewController: UIViewController {
                 
                 guard let res = self.webview?.url?.absoluteString.removeAnyHash() else { return }
                 let urlWithoutHash = res + "#otvet"
-                self.loadUrl(urlWithoutHash)
+                self.loadUrl2(urlWithoutHash)
             }
         }
     }
@@ -224,7 +237,7 @@ extension WebviewViewController: AppodealRewardedVideoDelegate {
         guard let currentUrlString = webview?.url?.absoluteString else { return }
         let res = currentUrlString.removeAddHash()
         let urlWithHash = res + "#otvet"
-        loadUrl(urlWithHash)
+        loadUrl2(urlWithHash)
     }
     
 }

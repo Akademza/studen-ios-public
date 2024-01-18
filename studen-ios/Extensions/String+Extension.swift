@@ -25,7 +25,12 @@ extension String {
         } else if self.contains("update") {
             return .update
         } else if self.contains("about") {
-            return .full
+            if self.contains("about:blank") {
+                return nil
+            }
+            else {
+                return .full
+            }
         } else if self.contains("pay1") {
             return .nonSub(id: "pay1")
         } else if self.contains("podpiska099") {
